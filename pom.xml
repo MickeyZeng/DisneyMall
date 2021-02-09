@@ -5,6 +5,14 @@
     <groupId>com.adelaide.disneymall</groupId>
     <artifactId>disneymall</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>2.4.2</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
     <name>disneymall</name>
     <description>聚合服务</description>
     <packaging>pom</packaging>
@@ -15,5 +23,8 @@
         <module>disneymall-member</module>
         <module>disneymall-order</module>
         <module>disneymall-product</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
+        <module>guilimall-common</module>
     </modules>
 </project>
