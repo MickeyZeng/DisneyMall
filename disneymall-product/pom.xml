@@ -13,11 +13,18 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>disneymall-product</name>
     <description>This function is for product.</description>
+
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>2020.0.0</spring-cloud.version>
     </properties>
+
     <dependencies>
+        <dependency>
+            <groupId>com.adelaide.disneymall</groupId>
+            <artifactId>disneymall-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -26,7 +33,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
