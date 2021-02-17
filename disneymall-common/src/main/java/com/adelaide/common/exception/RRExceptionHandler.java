@@ -8,7 +8,7 @@
 
 package com.adelaide.common.exception;
 
-import io.renren.common.utils.R;
+import com.adelaide.common.utils.R;
 import org.apache.shiro.authz.AuthorizationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
