@@ -3,6 +3,7 @@ package com.adelaide.disneymall.product;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * 整合MyBaties
@@ -17,6 +18,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @MapperScan("com.adelaide.disneymall.product.dao")
 @SpringBootApplication
+@EnableDiscoveryClient
 public class DisneymallProductApplication {
     public static void main(String[] args) {
         SpringApplication.run(DisneymallProductApplication.class, args);
