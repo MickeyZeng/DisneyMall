@@ -58,6 +58,7 @@ public class CategoryController {
      */
     @RequestMapping("/save")
     public R save(@RequestBody CategoryEntity category){
+        System.out.println("Here you are ????");
 		categoryService.save(category);
 
         return R.ok();
@@ -75,11 +76,14 @@ public class CategoryController {
 
     /**
      * 删除
+     * @RequestBody：获取请求体
+     * SpringMVC可以自动把请求体的数据转变为对应的对象
      */
     @RequestMapping("/delete")
     public R delete(@RequestBody Long[] catIds){
-		categoryService.removeByIds(Arrays.asList(catIds));
-
+//		categoryService.removeByIds(Arrays.asList(catIds));
+//        System.out.println("Hello Have you been here???");
+        categoryService.removeMenuByIds(Arrays.asList(catIds));
         return R.ok();
     }
 

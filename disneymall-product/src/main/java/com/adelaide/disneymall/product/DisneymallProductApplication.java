@@ -16,6 +16,14 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  *              2. Mybaties的映射SQL文件
  */
 
+/**
+ *
+ * 使用逻辑删除
+ * 在Application.yml配置全局的逻辑删除的配置
+ * 加上逻辑删除的注解@Logical
+ *
+ * */
+
 @MapperScan("com.adelaide.disneymall.product.dao")
 @SpringBootApplication
 @EnableDiscoveryClient
